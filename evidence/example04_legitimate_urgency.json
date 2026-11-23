@@ -1,0 +1,64 @@
+{
+  "app": "PhishWise",
+  "version": "0.1.0",
+  "scope": "English phrase-based cue analysis; no phishing classification",
+  "input_characters": 245,
+  "counts": {
+    "urgency": 1,
+    "authority": 1,
+    "threat": 0,
+    "reward": 0
+  },
+  "total_matches": 2,
+  "categories_present": 2,
+  "limitation": "Textual cues are prompts for review, not proof of phishing. No matches does not mean safe. Sender identity, links and attachments are not verified.",
+  "findings": [
+    {
+      "rule_id": "A01",
+      "category": "authority",
+      "start": 45,
+      "end": 52,
+      "matched_text": "IT team",
+      "context": "The IT team is carrying out maintenance tonight.",
+      "rationale": "The text refers to an institutional or support role.",
+      "context_note": ""
+    },
+    {
+      "rule_id": "U03",
+      "category": "urgency",
+      "start": 112,
+      "end": 133,
+      "matched_text": "by the end of the day",
+      "context": "Please save your work by the end of the day.",
+      "rationale": "A phrase creates a sense of limited time.",
+      "context_note": ""
+    }
+  ],
+  "guidance": {
+    "urgency": {
+      "label": "Time pressure",
+      "mechanism": "A short deadline may encourage action before the request is checked.",
+      "check": "Pause and confirm the deadline through a contact channel you already trust.",
+      "caveat": "Legitimate reminders and time-sensitive work can contain the same wording."
+    },
+    "authority": {
+      "label": "Claimed authority",
+      "mechanism": "A reference to a senior role or trusted team may encourage compliance.",
+      "check": "Confirm who sent the request using an independently known contact.",
+      "caveat": "Mentioning a role is not evidence of impersonation; this tool cannot authenticate a sender."
+    },
+    "threat": {
+      "label": "Threatened consequence",
+      "mechanism": "A threatened loss of access or money may pressure the reader to comply.",
+      "check": "Check the account through its usual app or an independently obtained address.",
+      "caveat": "Genuine service notices can also describe account restrictions or consequences."
+    },
+    "reward": {
+      "label": "Reward or special offer",
+      "mechanism": "An unexpected benefit may encourage engagement before its conditions are checked.",
+      "check": "Verify the offer independently, especially before sharing information or paying.",
+      "caveat": "Legitimate promotions may use similar language; an offer alone does not establish fraud."
+    }
+  },
+  "exported_at_utc": "2026-11-20T05:32:34.885178+00:00"
+}

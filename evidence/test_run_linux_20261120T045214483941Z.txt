@@ -1,0 +1,41 @@
+PhishWise v0.1.0 automated verification
+Run time (UTC): 2026-11-20T04:52:14.294948+00:00
+Platform: Linux-6.18.57-x86_64-with-glibc2.41
+Python: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+Synthetic developer tests; NOT an independent accuracy evaluation.
+
+test_action_and_deadline (test_analyzer.AnalyzerTests.test_action_and_deadline) ... ok
+test_all_four_categories (test_analyzer.AnalyzerTests.test_all_four_categories) ... ok
+test_case_and_whitespace (test_analyzer.AnalyzerTests.test_case_and_whitespace) ... ok
+test_context_is_bounded (test_analyzer.AnalyzerTests.test_context_is_bounded) ... ok
+test_curly_apostrophe (test_analyzer.AnalyzerTests.test_curly_apostrophe) ... ok
+test_deadline_phrase (test_analyzer.AnalyzerTests.test_deadline_phrase) ... ok
+test_deterministic (test_analyzer.AnalyzerTests.test_deterministic) ... ok
+test_educational_context (test_analyzer.AnalyzerTests.test_educational_context) ... ok
+test_empty_input (test_analyzer.AnalyzerTests.test_empty_input) ... ok
+test_inaction_consequence (test_analyzer.AnalyzerTests.test_inaction_consequence) ... ok
+test_json_round_trip (test_analyzer.AnalyzerTests.test_json_round_trip) ... ok
+test_legitimate_cues_are_not_classified_as_phishing (test_analyzer.AnalyzerTests.test_legitimate_cues_are_not_classified_as_phishing) ... ok
+test_length_boundary (test_analyzer.AnalyzerTests.test_length_boundary) ... ok
+test_negation_is_context_not_silent_deletion (test_analyzer.AnalyzerTests.test_negation_is_context_not_silent_deletion) ... ok
+test_no_match_does_not_mean_safe (test_analyzer.AnalyzerTests.test_no_match_does_not_mean_safe) ... ok
+test_non_text_input (test_analyzer.AnalyzerTests.test_non_text_input) ... ok
+test_numeric_time_window (test_analyzer.AnalyzerTests.test_numeric_time_window) ... ok
+test_original_offsets_unicode (test_analyzer.AnalyzerTests.test_original_offsets_unicode) ... ok
+test_plain_markup_is_not_executed (test_analyzer.AnalyzerTests.test_plain_markup_is_not_executed) ... ok
+test_reading_order (test_analyzer.AnalyzerTests.test_reading_order) ... ok
+test_repeated_occurrences (test_analyzer.AnalyzerTests.test_repeated_occurrences) ... ok
+test_restriction_consequence (test_analyzer.AnalyzerTests.test_restriction_consequence) ... ok
+test_reward_phrase (test_analyzer.AnalyzerTests.test_reward_phrase) ... ok
+test_rule_ids_unique (test_analyzer.AnalyzerTests.test_rule_ids_unique) ... ok
+test_senior_role (test_analyzer.AnalyzerTests.test_senior_role) ... ok
+test_special_selection (test_analyzer.AnalyzerTests.test_special_selection) ... ok
+test_support_role (test_analyzer.AnalyzerTests.test_support_role) ... ok
+test_word_boundaries (test_analyzer.AnalyzerTests.test_word_boundaries) ... ok
+test_word_time_window (test_analyzer.AnalyzerTests.test_word_time_window) ... ok
+setUpClass (test_gui.GuiTests) ... skipped 'A graphical desktop is required: no display name and no $DISPLAY environment variable'
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.020s
+
+OK (skipped=1)

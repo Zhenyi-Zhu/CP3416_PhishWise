@@ -1,0 +1,294 @@
+{
+  "dataset_id": "phishwise_additional_cues_01",
+  "provenance": "AI-assisted synthetic messages and proposed reference labels; author had access to the rules; not collected emails or an independent blind benchmark.",
+  "reference_status": "Proposed labels authored before the first batch run; student review pending.",
+  "baseline_analyzer_sha256": "7c6f1e0a8fde78da4ee1772ecbd1a4c4db4b2702c540e08f7e87128fa7c6f427",
+  "category_keys": [
+    "urgency",
+    "authority",
+    "threat",
+    "reward"
+  ],
+  "cases": [
+    {
+      "id": "D01",
+      "group": "direct_wording",
+      "text": "Subject: Document confirmation\n\nPlease confirm now. Your access will be terminated if the form is not returned.",
+      "expected": [
+        "urgency",
+        "threat"
+      ],
+      "evidence": {
+        "urgency": "confirm now",
+        "threat": "access will be terminated"
+      },
+      "rationale": "Immediate confirmation and loss of access are explicitly communicated."
+    },
+    {
+      "id": "D02",
+      "group": "direct_wording",
+      "text": "Subject: Profile check\n\nHuman resources asks you to review the contact information shown in your staff profile.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "Human resources"
+      },
+      "rationale": "An institutional role is presented as the source of the request."
+    },
+    {
+      "id": "D03",
+      "group": "direct_wording",
+      "text": "Subject: Membership benefit\n\nClaim your reward by returning the membership form. Delivery arrangements will follow.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "Claim your reward"
+      },
+      "rationale": "A benefit is offered as an inducement to engage; no short deadline is stated."
+    },
+    {
+      "id": "D04",
+      "group": "direct_wording",
+      "text": "Subject: Payment details check\n\nThe payroll team asks you to reply immediately with the requested details.",
+      "expected": [
+        "authority",
+        "urgency"
+      ],
+      "evidence": {
+        "authority": "payroll team",
+        "urgency": "reply immediately"
+      },
+      "rationale": "The request invokes an internal team and demands an immediate response."
+    },
+    {
+      "id": "D05",
+      "group": "direct_wording",
+      "text": "Subject: Mailbox restriction\n\nYour mailbox has been blocked. Complete the identity form to restore access.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "mailbox has been blocked"
+      },
+      "rationale": "Loss of service access is communicated as a reason to complete a form."
+    },
+    {
+      "id": "D06",
+      "group": "direct_wording",
+      "text": "Subject: Travel draw result\n\nYou have been selected as a winner. Send your delivery address to arrange the package.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "You have been selected as a winner"
+      },
+      "rationale": "Special selection as a winner is communicated to induce a response."
+    },
+    {
+      "id": "D07",
+      "group": "direct_wording",
+      "text": "Subject: Form closing time\n\nReturn the signed form before midnight. The submission window closes tonight.",
+      "expected": [
+        "urgency"
+      ],
+      "evidence": {
+        "urgency": "before midnight"
+      },
+      "rationale": "A same-day deadline creates time pressure."
+    },
+    {
+      "id": "D08",
+      "group": "direct_wording",
+      "text": "Subject: Employee benefit message\n\nThe CEO invites you to claim your bonus through the attached form.",
+      "expected": [
+        "authority",
+        "reward"
+      ],
+      "evidence": {
+        "authority": "CEO",
+        "reward": "claim your bonus"
+      },
+      "rationale": "A senior role and a benefit are used together to support engagement."
+    },
+    {
+      "id": "V01",
+      "group": "alternative_wording",
+      "text": "Subject: Confirmation window\n\nYou have ten minutes left to finish this confirmation. Send your answer without delay.",
+      "expected": [
+        "urgency"
+      ],
+      "evidence": {
+        "urgency": "You have ten minutes left"
+      },
+      "rationale": "A short time window conveys urgency even without a specific configured phrase."
+    },
+    {
+      "id": "V02",
+      "group": "alternative_wording",
+      "text": "Subject: Approval request\n\nSend the approval before lunch today; this cannot wait until the afternoon.",
+      "expected": [
+        "urgency"
+      ],
+      "evidence": {
+        "urgency": "before lunch today"
+      },
+      "rationale": "The message demands action within a short same-day period."
+    },
+    {
+      "id": "V03",
+      "group": "alternative_wording",
+      "text": "Subject: Finance instruction\n\nThe Head of Finance has instructed you to complete the attached authorization form.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "Head of Finance"
+      },
+      "rationale": "A senior organizational role is presented as backing the instruction."
+    },
+    {
+      "id": "V04",
+      "group": "alternative_wording",
+      "text": "Subject: Student details request\n\nThe university registrar requires you to confirm the details shown on this form.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "university registrar"
+      },
+      "rationale": "An institutional role is presented as the source of a requirement."
+    },
+    {
+      "id": "V05",
+      "group": "alternative_wording",
+      "text": "Subject: Sign-in check\n\nWe will remove your ability to sign in unless you submit the form.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "remove your ability to sign in"
+      },
+      "rationale": "Loss of account access is threatened in different wording."
+    },
+    {
+      "id": "V06",
+      "group": "alternative_wording",
+      "text": "Subject: Storage check\n\nYour files will be erased unless you complete the check.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "Your files will be erased"
+      },
+      "rationale": "Loss of files is presented as a negative consequence of inaction."
+    },
+    {
+      "id": "V07",
+      "group": "alternative_wording",
+      "text": "Subject: Voucher collection\n\nA complimentary voucher is waiting for you. Submit your details to receive it.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "A complimentary voucher is waiting for you"
+      },
+      "rationale": "An offered benefit is used to encourage disclosure or engagement."
+    },
+    {
+      "id": "V08",
+      "group": "alternative_wording",
+      "text": "Subject: Travel package\n\nYou are the lucky recipient of a travel package. Send your address to arrange delivery.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "lucky recipient of a travel package"
+      },
+      "rationale": "Special selection and an offered travel benefit invite a response."
+    },
+    {
+      "id": "L01",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Support appointment\n\nThe help desk has confirmed your appointment. You can review it in the usual staff portal.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "help desk"
+      },
+      "rationale": "The notice invokes an institutional support role, even in an ordinary scenario."
+    },
+    {
+      "id": "L02",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Building access survey\n\nThe security team is updating the visitor process. Please submit comments by the end of the day.",
+      "expected": [
+        "authority",
+        "urgency"
+      ],
+      "evidence": {
+        "authority": "security team",
+        "urgency": "by the end of the day"
+      },
+      "rationale": "An ordinary work notice contains both an institutional role and a same-day deadline."
+    },
+    {
+      "id": "L03",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Mailbox retirement\n\nAs agreed in your service request, the old mailbox will be disabled. Keep using your replacement address.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "mailbox will be disabled"
+      },
+      "rationale": "The text describes loss of access; its agreed context does not remove that consequence cue."
+    },
+    {
+      "id": "L04",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Library workshop\n\nParticipants receive a free gift at the workshop. Registration is available at the usual library desk.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "free gift"
+      },
+      "rationale": "A normal promotion still offers a benefit to encourage participation."
+    },
+    {
+      "id": "N01",
+      "group": "no_target_cues",
+      "text": "Subject: Discussion notes\n\nThe discussion notes are in our shared folder. Please add comments when convenient.",
+      "expected": [],
+      "evidence": {},
+      "rationale": "No short deadline, authority role, adverse consequence or reward appeal is asserted."
+    },
+    {
+      "id": "N02",
+      "group": "no_target_cues",
+      "text": "Subject: Display settings\n\nThe account settings page now supports a larger font. The help article explains how to change it.",
+      "expected": [],
+      "evidence": {},
+      "rationale": "Account and help vocabulary alone do not communicate any of the four target meanings."
+    },
+    {
+      "id": "N03",
+      "group": "no_target_cues",
+      "text": "Subject: Proofreading question\n\nThe word prize appears in paragraph two of the draft. Could you check whether the spelling is correct?",
+      "expected": [],
+      "evidence": {},
+      "rationale": "The word prize is discussed as text; no benefit is offered to the reader."
+    },
+    {
+      "id": "N04",
+      "group": "no_target_cues",
+      "text": "Subject: Invoice routing\n\nPlease use the replacement payment details for the next invoice. The document contains the new account number.",
+      "expected": [],
+      "evidence": {},
+      "rationale": "The request could warrant verification but asserts none of the four target cue meanings; no safety label is assigned."
+    }
+  ]
+}

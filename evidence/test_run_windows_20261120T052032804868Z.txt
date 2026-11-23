@@ -1,0 +1,63 @@
+PhishWise v0.1.0 automated verification
+Run time (UTC): 2026-11-20T05:20:30.462543+00:00
+Platform: Windows-11-10.0.26200-SP0
+Python: 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+Synthetic developer tests; NOT an independent accuracy evaluation.
+
+test_action_and_deadline (test_analyzer.AnalyzerTests.test_action_and_deadline) ... ok
+test_all_four_categories (test_analyzer.AnalyzerTests.test_all_four_categories) ... ok
+test_case_and_whitespace (test_analyzer.AnalyzerTests.test_case_and_whitespace) ... ok
+test_context_is_bounded (test_analyzer.AnalyzerTests.test_context_is_bounded) ... ok
+test_curly_apostrophe (test_analyzer.AnalyzerTests.test_curly_apostrophe) ... ok
+test_deadline_phrase (test_analyzer.AnalyzerTests.test_deadline_phrase) ... ok
+test_deterministic (test_analyzer.AnalyzerTests.test_deterministic) ... ok
+test_educational_context (test_analyzer.AnalyzerTests.test_educational_context) ... ok
+test_empty_input (test_analyzer.AnalyzerTests.test_empty_input) ... ok
+test_inaction_consequence (test_analyzer.AnalyzerTests.test_inaction_consequence) ... ok
+test_json_round_trip (test_analyzer.AnalyzerTests.test_json_round_trip) ... ok
+test_legitimate_cues_are_not_classified_as_phishing (test_analyzer.AnalyzerTests.test_legitimate_cues_are_not_classified_as_phishing) ... ok
+test_length_boundary (test_analyzer.AnalyzerTests.test_length_boundary) ... ok
+test_negation_is_context_not_silent_deletion (test_analyzer.AnalyzerTests.test_negation_is_context_not_silent_deletion) ... ok
+test_no_match_does_not_mean_safe (test_analyzer.AnalyzerTests.test_no_match_does_not_mean_safe) ... ok
+test_non_text_input (test_analyzer.AnalyzerTests.test_non_text_input) ... ok
+test_numeric_time_window (test_analyzer.AnalyzerTests.test_numeric_time_window) ... ok
+test_original_offsets_unicode (test_analyzer.AnalyzerTests.test_original_offsets_unicode) ... ok
+test_plain_markup_is_not_executed (test_analyzer.AnalyzerTests.test_plain_markup_is_not_executed) ... ok
+test_reading_order (test_analyzer.AnalyzerTests.test_reading_order) ... ok
+test_repeated_occurrences (test_analyzer.AnalyzerTests.test_repeated_occurrences) ... ok
+test_restriction_consequence (test_analyzer.AnalyzerTests.test_restriction_consequence) ... ok
+test_reward_phrase (test_analyzer.AnalyzerTests.test_reward_phrase) ... ok
+test_rule_ids_unique (test_analyzer.AnalyzerTests.test_rule_ids_unique) ... ok
+test_senior_role (test_analyzer.AnalyzerTests.test_senior_role) ... ok
+test_special_selection (test_analyzer.AnalyzerTests.test_special_selection) ... ok
+test_support_role (test_analyzer.AnalyzerTests.test_support_role) ... ok
+test_word_boundaries (test_analyzer.AnalyzerTests.test_word_boundaries) ... ok
+test_word_time_window (test_analyzer.AnalyzerTests.test_word_time_window) ... ok
+test_clear_resets_everything (test_gui.GuiTests.test_clear_resets_everything) ... ok
+test_edited_text_invalidates_export_and_results (test_gui.GuiTests.test_edited_text_invalidates_export_and_results) ... ok
+test_empty_input_shows_message (test_gui.GuiTests.test_empty_input_shows_message) ... ok
+test_export_error_is_handled (test_gui.GuiTests.test_export_error_is_handled) ... ok
+test_export_file_and_cancel (test_gui.GuiTests.test_export_file_and_cancel) ... ok
+test_load_analyze_and_highlight (test_gui.GuiTests.test_load_analyze_and_highlight) ... ok
+test_loading_a_new_example_invalidates_results (test_gui.GuiTests.test_loading_a_new_example_invalidates_results) ... ok
+test_no_matches_does_not_show_safe (test_gui.GuiTests.test_no_matches_does_not_show_safe) ... ok
+test_unicode_highlight_selects_exact_evidence (test_gui.GuiTests.test_unicode_highlight_selects_exact_evidence) ... FAIL
+
+======================================================================
+FAIL: test_unicode_highlight_selects_exact_evidence (test_gui.GuiTests.test_unicode_highlight_selects_exact_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\PhishWise_v0.1\PhishWise\tests\test_gui.py", line 69, in test_unicode_highlight_selects_exact_evidence
+    self.assertEqual(self.app.editor.get(start, end), "Act now")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'ct now.' != 'Act now'
+- ct now.
+?       -
++ Act now
+? +
+
+
+----------------------------------------------------------------------
+Ran 38 tests in 2.135s
+
+FAILED (failures=1)

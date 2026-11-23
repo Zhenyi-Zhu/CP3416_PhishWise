@@ -1,0 +1,42 @@
+PhishWise additional cue evaluation
+
+Run time (UTC): 2026-11-20T12:01:56.527830+00:00
+Platform: Windows-11-10.0.26200-SP0
+Python: 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]
+Analyzer version: 0.1.0
+Dataset: phishwise_additional_cues_01
+
+Task: message-level cue category coverage (not phishing classification)
+Messages: 24 | Category decisions: 96
+Exact category sets: 16/24 (66.7%)
+Micro precision: 100.0%
+Micro recall: 66.7%
+Micro F1: 80.0%
+
+Category       TP  FP  FN  TN    Precision   Recall      F1
+urgency         4   0   2  18      100.0%    66.7%    80.0%
+authority       5   0   2  17      100.0%    71.4%    83.3%
+threat          3   0   2  19      100.0%    60.0%    75.0%
+reward          4   0   2  18      100.0%    66.7%    80.0%
+
+Exact category sets by group:
+  direct_wording: 8/8
+  alternative_wording: 0/8
+  ordinary_notice_with_cue: 4/4
+  no_target_cues: 4/4
+
+Mismatches:
+  V01: missing=urgency; extra=-
+  V02: missing=urgency; extra=-
+  V03: missing=authority; extra=-
+  V04: missing=authority; extra=-
+  V05: missing=threat; extra=-
+  V06: missing=threat; extra=-
+  V07: missing=reward; extra=-
+  V08: missing=reward; extra=-
+
+Read evaluation/README.md for sample origin, labeling and limitations.
+These scores describe this selected set only; they are not real-world accuracy estimates.
+Analyzer SHA-256 (normalized newlines): 7c6f1e0a8fde78da4ee1772ecbd1a4c4db4b2702c540e08f7e87128fa7c6f427
+Dataset SHA-256: 47785cc0731ce6a3b265dea8677776bed2d9f2d27bae37cd4cc234842b59f97d
+Runner SHA-256: 8f73fa12d507f58557361ac415d3222c264a3bf9ed78835034451b8640eff3f5

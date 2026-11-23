@@ -1,0 +1,73 @@
+﻿id,group,expected,predicted,missing,extra,exact_set,text,rationale
+D01,direct_wording,threat;urgency,threat;urgency,,,True,"Subject: Document confirmation
+
+Please confirm now. Your access will be terminated if the form is not returned.",Immediate confirmation and loss of access are explicitly communicated.
+D02,direct_wording,authority,authority,,,True,"Subject: Profile check
+
+Human resources asks you to review the contact information shown in your staff profile.",An institutional role is presented as the source of the request.
+D03,direct_wording,reward,reward,,,True,"Subject: Membership benefit
+
+Claim your reward by returning the membership form. Delivery arrangements will follow.",A benefit is offered as an inducement to engage; no short deadline is stated.
+D04,direct_wording,authority;urgency,authority;urgency,,,True,"Subject: Payment details check
+
+The payroll team asks you to reply immediately with the requested details.",The request invokes an internal team and demands an immediate response.
+D05,direct_wording,threat,threat,,,True,"Subject: Mailbox restriction
+
+Your mailbox has been blocked. Complete the identity form to restore access.",Loss of service access is communicated as a reason to complete a form.
+D06,direct_wording,reward,reward,,,True,"Subject: Travel draw result
+
+You have been selected as a winner. Send your delivery address to arrange the package.",Special selection as a winner is communicated to induce a response.
+D07,direct_wording,urgency,urgency,,,True,"Subject: Form closing time
+
+Return the signed form before midnight. The submission window closes tonight.",A same-day deadline creates time pressure.
+D08,direct_wording,authority;reward,authority;reward,,,True,"Subject: Employee benefit message
+
+The CEO invites you to claim your bonus through the attached form.",A senior role and a benefit are used together to support engagement.
+V01,alternative_wording,urgency,,urgency,,False,"Subject: Confirmation window
+
+You have ten minutes left to finish this confirmation. Send your answer without delay.",A short time window conveys urgency even without a specific configured phrase.
+V02,alternative_wording,urgency,,urgency,,False,"Subject: Approval request
+
+Send the approval before lunch today; this cannot wait until the afternoon.",The message demands action within a short same-day period.
+V03,alternative_wording,authority,,authority,,False,"Subject: Finance instruction
+
+The Head of Finance has instructed you to complete the attached authorization form.",A senior organizational role is presented as backing the instruction.
+V04,alternative_wording,authority,,authority,,False,"Subject: Student details request
+
+The university registrar requires you to confirm the details shown on this form.",An institutional role is presented as the source of a requirement.
+V05,alternative_wording,threat,,threat,,False,"Subject: Sign-in check
+
+We will remove your ability to sign in unless you submit the form.",Loss of account access is threatened in different wording.
+V06,alternative_wording,threat,,threat,,False,"Subject: Storage check
+
+Your files will be erased unless you complete the check.",Loss of files is presented as a negative consequence of inaction.
+V07,alternative_wording,reward,,reward,,False,"Subject: Voucher collection
+
+A complimentary voucher is waiting for you. Submit your details to receive it.",An offered benefit is used to encourage disclosure or engagement.
+V08,alternative_wording,reward,,reward,,False,"Subject: Travel package
+
+You are the lucky recipient of a travel package. Send your address to arrange delivery.",Special selection and an offered travel benefit invite a response.
+L01,ordinary_notice_with_cue,authority,authority,,,True,"Subject: Support appointment
+
+The help desk has confirmed your appointment. You can review it in the usual staff portal.","The notice invokes an institutional support role, even in an ordinary scenario."
+L02,ordinary_notice_with_cue,authority;urgency,authority;urgency,,,True,"Subject: Building access survey
+
+The security team is updating the visitor process. Please submit comments by the end of the day.",An ordinary work notice contains both an institutional role and a same-day deadline.
+L03,ordinary_notice_with_cue,threat,threat,,,True,"Subject: Mailbox retirement
+
+As agreed in your service request, the old mailbox will be disabled. Keep using your replacement address.",The text describes loss of access; its agreed context does not remove that consequence cue.
+L04,ordinary_notice_with_cue,reward,reward,,,True,"Subject: Library workshop
+
+Participants receive a free gift at the workshop. Registration is available at the usual library desk.",A normal promotion still offers a benefit to encourage participation.
+N01,no_target_cues,,,,,True,"Subject: Discussion notes
+
+The discussion notes are in our shared folder. Please add comments when convenient.","No short deadline, authority role, adverse consequence or reward appeal is asserted."
+N02,no_target_cues,,,,,True,"Subject: Display settings
+
+The account settings page now supports a larger font. The help article explains how to change it.",Account and help vocabulary alone do not communicate any of the four target meanings.
+N03,no_target_cues,,,,,True,"Subject: Proofreading question
+
+The word prize appears in paragraph two of the draft. Could you check whether the spelling is correct?",The word prize is discussed as text; no benefit is offered to the reader.
+N04,no_target_cues,,,,,True,"Subject: Invoice routing
+
+Please use the replacement payment details for the next invoice. The document contains the new account number.",The request could warrant verification but asserts none of the four target cue meanings; no safety label is assigned.

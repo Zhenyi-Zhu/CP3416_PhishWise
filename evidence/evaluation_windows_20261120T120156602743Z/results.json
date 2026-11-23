@@ -1,0 +1,1041 @@
+{
+  "run_time_utc": "2026-11-20T12:01:56.527830+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "analyzer_version": "0.1.0",
+  "analyzer_sha256": "7c6f1e0a8fde78da4ee1772ecbd1a4c4db4b2702c540e08f7e87128fa7c6f427",
+  "dataset_sha256": "47785cc0731ce6a3b265dea8677776bed2d9f2d27bae37cd4cc234842b59f97d",
+  "runner_sha256": "8f73fa12d507f58557361ac415d3222c264a3bf9ed78835034451b8640eff3f5",
+  "dataset_id": "phishwise_additional_cues_01",
+  "provenance": "AI-assisted synthetic messages and proposed reference labels; author had access to the rules; not collected emails or an independent blind benchmark.",
+  "reference_status": "Proposed labels authored before the first batch run; student review pending.",
+  "metrics": {
+    "messages": 24,
+    "category_decisions": 96,
+    "exact_sets": 16,
+    "exact_set_agreement": 0.6666666666666666,
+    "per_category": {
+      "urgency": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 2,
+        "tn": 18,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "authority": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 2,
+        "tn": 17,
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1": 0.8333333333333334
+      },
+      "threat": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 2,
+        "tn": 19,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "reward": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 2,
+        "tn": 18,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      }
+    },
+    "micro": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 8,
+      "tn": 72,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1": 0.8
+    }
+  },
+  "groups": {
+    "direct_wording": {
+      "messages": 8,
+      "category_decisions": 32,
+      "exact_sets": 8,
+      "exact_set_agreement": 1.0,
+      "per_category": {
+        "urgency": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "authority": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "threat": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 6,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "reward": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "tn": 5,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "tn": 21,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "alternative_wording": {
+      "messages": 8,
+      "category_decisions": 32,
+      "exact_sets": 0,
+      "exact_set_agreement": 0.0,
+      "per_category": {
+        "urgency": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 6,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "authority": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 6,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "threat": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 6,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "reward": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "tn": 6,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "micro": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 8,
+        "tn": 24,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "ordinary_notice_with_cue": {
+      "messages": 4,
+      "category_decisions": 16,
+      "exact_sets": 4,
+      "exact_set_agreement": 1.0,
+      "per_category": {
+        "urgency": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "authority": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "tn": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "threat": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "reward": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "tn": 3,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "micro": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "tn": 11,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "no_target_cues": {
+      "messages": 4,
+      "category_decisions": 16,
+      "exact_sets": 4,
+      "exact_set_agreement": 1.0,
+      "per_category": {
+        "urgency": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 4,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "authority": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 4,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "threat": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 4,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "reward": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "tn": 4,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "micro": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "tn": 16,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "D01",
+      "group": "direct_wording",
+      "text": "Subject: Document confirmation\n\nPlease confirm now. Your access will be terminated if the form is not returned.",
+      "expected": [
+        "urgency",
+        "threat"
+      ],
+      "evidence": {
+        "urgency": "confirm now",
+        "threat": "access will be terminated"
+      },
+      "rationale": "Immediate confirmation and loss of access are explicitly communicated.",
+      "predicted": [
+        "threat",
+        "urgency"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 1,
+        "authority": 0,
+        "threat": 1,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "U01",
+          "category": "urgency",
+          "start": 39,
+          "end": 50,
+          "matched_text": "confirm now",
+          "context": "Please confirm now. Your access will be terminated if the form is not returned.",
+          "rationale": "An action verb is paired with an immediate deadline.",
+          "context_note": ""
+        },
+        {
+          "rule_id": "T01",
+          "category": "threat",
+          "start": 57,
+          "end": 82,
+          "matched_text": "access will be terminated",
+          "context": "Please confirm now. Your access will be terminated if the form is not returned.",
+          "rationale": "The message describes a loss of account or service access.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "group": "direct_wording",
+      "text": "Subject: Profile check\n\nHuman resources asks you to review the contact information shown in your staff profile.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "Human resources"
+      },
+      "rationale": "An institutional role is presented as the source of the request.",
+      "predicted": [
+        "authority"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 1,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "A01",
+          "category": "authority",
+          "start": 24,
+          "end": 39,
+          "matched_text": "Human resources",
+          "context": "Human resources asks you to review the contact information shown in your staff profile.",
+          "rationale": "The text refers to an institutional or support role.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "group": "direct_wording",
+      "text": "Subject: Membership benefit\n\nClaim your reward by returning the membership form. Delivery arrangements will follow.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "Claim your reward"
+      },
+      "rationale": "A benefit is offered as an inducement to engage; no short deadline is stated.",
+      "predicted": [
+        "reward"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 1
+      },
+      "findings": [
+        {
+          "rule_id": "R01",
+          "category": "reward",
+          "start": 29,
+          "end": 46,
+          "matched_text": "Claim your reward",
+          "context": "Claim your reward by returning the membership form. Delivery arrangements will follow.",
+          "rationale": "The text promises a benefit or invites a reward claim.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "group": "direct_wording",
+      "text": "Subject: Payment details check\n\nThe payroll team asks you to reply immediately with the requested details.",
+      "expected": [
+        "authority",
+        "urgency"
+      ],
+      "evidence": {
+        "authority": "payroll team",
+        "urgency": "reply immediately"
+      },
+      "rationale": "The request invokes an internal team and demands an immediate response.",
+      "predicted": [
+        "authority",
+        "urgency"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 1,
+        "authority": 1,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "A01",
+          "category": "authority",
+          "start": 36,
+          "end": 48,
+          "matched_text": "payroll team",
+          "context": "The payroll team asks you to reply immediately with the requested details.",
+          "rationale": "The text refers to an institutional or support role.",
+          "context_note": ""
+        },
+        {
+          "rule_id": "U01",
+          "category": "urgency",
+          "start": 61,
+          "end": 78,
+          "matched_text": "reply immediately",
+          "context": "The payroll team asks you to reply immediately with the requested details.",
+          "rationale": "An action verb is paired with an immediate deadline.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "group": "direct_wording",
+      "text": "Subject: Mailbox restriction\n\nYour mailbox has been blocked. Complete the identity form to restore access.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "mailbox has been blocked"
+      },
+      "rationale": "Loss of service access is communicated as a reason to complete a form.",
+      "predicted": [
+        "threat"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 1,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "T01",
+          "category": "threat",
+          "start": 35,
+          "end": 59,
+          "matched_text": "mailbox has been blocked",
+          "context": "Your mailbox has been blocked. Complete the identity form to restore access.",
+          "rationale": "The message describes a loss of account or service access.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "group": "direct_wording",
+      "text": "Subject: Travel draw result\n\nYou have been selected as a winner. Send your delivery address to arrange the package.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "You have been selected as a winner"
+      },
+      "rationale": "Special selection as a winner is communicated to induce a response.",
+      "predicted": [
+        "reward"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 1
+      },
+      "findings": [
+        {
+          "rule_id": "R02",
+          "category": "reward",
+          "start": 29,
+          "end": 51,
+          "matched_text": "You have been selected",
+          "context": "You have been selected as a winner. Send your delivery address to arrange the package.",
+          "rationale": "The message suggests that the recipient has been specially selected.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "group": "direct_wording",
+      "text": "Subject: Form closing time\n\nReturn the signed form before midnight. The submission window closes tonight.",
+      "expected": [
+        "urgency"
+      ],
+      "evidence": {
+        "urgency": "before midnight"
+      },
+      "rationale": "A same-day deadline creates time pressure.",
+      "predicted": [
+        "urgency"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 1,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "U03",
+          "category": "urgency",
+          "start": 51,
+          "end": 66,
+          "matched_text": "before midnight",
+          "context": "Return the signed form before midnight. The submission window closes tonight.",
+          "rationale": "A phrase creates a sense of limited time.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "group": "direct_wording",
+      "text": "Subject: Employee benefit message\n\nThe CEO invites you to claim your bonus through the attached form.",
+      "expected": [
+        "authority",
+        "reward"
+      ],
+      "evidence": {
+        "authority": "CEO",
+        "reward": "claim your bonus"
+      },
+      "rationale": "A senior role and a benefit are used together to support engagement.",
+      "predicted": [
+        "authority",
+        "reward"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 1,
+        "threat": 0,
+        "reward": 1
+      },
+      "findings": [
+        {
+          "rule_id": "A02",
+          "category": "authority",
+          "start": 39,
+          "end": 42,
+          "matched_text": "CEO",
+          "context": "The CEO invites you to claim your bonus through the attached form.",
+          "rationale": "The text refers to a senior or supervisory role.",
+          "context_note": ""
+        },
+        {
+          "rule_id": "R01",
+          "category": "reward",
+          "start": 58,
+          "end": 74,
+          "matched_text": "claim your bonus",
+          "context": "The CEO invites you to claim your bonus through the attached form.",
+          "rationale": "The text promises a benefit or invites a reward claim.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "V01",
+      "group": "alternative_wording",
+      "text": "Subject: Confirmation window\n\nYou have ten minutes left to finish this confirmation. Send your answer without delay.",
+      "expected": [
+        "urgency"
+      ],
+      "evidence": {
+        "urgency": "You have ten minutes left"
+      },
+      "rationale": "A short time window conveys urgency even without a specific configured phrase.",
+      "predicted": [],
+      "missing": [
+        "urgency"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V02",
+      "group": "alternative_wording",
+      "text": "Subject: Approval request\n\nSend the approval before lunch today; this cannot wait until the afternoon.",
+      "expected": [
+        "urgency"
+      ],
+      "evidence": {
+        "urgency": "before lunch today"
+      },
+      "rationale": "The message demands action within a short same-day period.",
+      "predicted": [],
+      "missing": [
+        "urgency"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V03",
+      "group": "alternative_wording",
+      "text": "Subject: Finance instruction\n\nThe Head of Finance has instructed you to complete the attached authorization form.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "Head of Finance"
+      },
+      "rationale": "A senior organizational role is presented as backing the instruction.",
+      "predicted": [],
+      "missing": [
+        "authority"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V04",
+      "group": "alternative_wording",
+      "text": "Subject: Student details request\n\nThe university registrar requires you to confirm the details shown on this form.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "university registrar"
+      },
+      "rationale": "An institutional role is presented as the source of a requirement.",
+      "predicted": [],
+      "missing": [
+        "authority"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V05",
+      "group": "alternative_wording",
+      "text": "Subject: Sign-in check\n\nWe will remove your ability to sign in unless you submit the form.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "remove your ability to sign in"
+      },
+      "rationale": "Loss of account access is threatened in different wording.",
+      "predicted": [],
+      "missing": [
+        "threat"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V06",
+      "group": "alternative_wording",
+      "text": "Subject: Storage check\n\nYour files will be erased unless you complete the check.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "Your files will be erased"
+      },
+      "rationale": "Loss of files is presented as a negative consequence of inaction.",
+      "predicted": [],
+      "missing": [
+        "threat"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V07",
+      "group": "alternative_wording",
+      "text": "Subject: Voucher collection\n\nA complimentary voucher is waiting for you. Submit your details to receive it.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "A complimentary voucher is waiting for you"
+      },
+      "rationale": "An offered benefit is used to encourage disclosure or engagement.",
+      "predicted": [],
+      "missing": [
+        "reward"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "V08",
+      "group": "alternative_wording",
+      "text": "Subject: Travel package\n\nYou are the lucky recipient of a travel package. Send your address to arrange delivery.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "lucky recipient of a travel package"
+      },
+      "rationale": "Special selection and an offered travel benefit invite a response.",
+      "predicted": [],
+      "missing": [
+        "reward"
+      ],
+      "extra": [],
+      "exact_set": false,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "L01",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Support appointment\n\nThe help desk has confirmed your appointment. You can review it in the usual staff portal.",
+      "expected": [
+        "authority"
+      ],
+      "evidence": {
+        "authority": "help desk"
+      },
+      "rationale": "The notice invokes an institutional support role, even in an ordinary scenario.",
+      "predicted": [
+        "authority"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 1,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "A01",
+          "category": "authority",
+          "start": 34,
+          "end": 43,
+          "matched_text": "help desk",
+          "context": "The help desk has confirmed your appointment. You can review it in the usual staff portal.",
+          "rationale": "The text refers to an institutional or support role.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Building access survey\n\nThe security team is updating the visitor process. Please submit comments by the end of the day.",
+      "expected": [
+        "authority",
+        "urgency"
+      ],
+      "evidence": {
+        "authority": "security team",
+        "urgency": "by the end of the day"
+      },
+      "rationale": "An ordinary work notice contains both an institutional role and a same-day deadline.",
+      "predicted": [
+        "authority",
+        "urgency"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 1,
+        "authority": 1,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "A01",
+          "category": "authority",
+          "start": 37,
+          "end": 50,
+          "matched_text": "security team",
+          "context": "The security team is updating the visitor process. Please submit comments by the end of the day.",
+          "rationale": "The text refers to an institutional or support role.",
+          "context_note": ""
+        },
+        {
+          "rule_id": "U03",
+          "category": "urgency",
+          "start": 107,
+          "end": 128,
+          "matched_text": "by the end of the day",
+          "context": "The security team is updating the visitor process. Please submit comments by the end of the day.",
+          "rationale": "A phrase creates a sense of limited time.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Mailbox retirement\n\nAs agreed in your service request, the old mailbox will be disabled. Keep using your replacement address.",
+      "expected": [
+        "threat"
+      ],
+      "evidence": {
+        "threat": "mailbox will be disabled"
+      },
+      "rationale": "The text describes loss of access; its agreed context does not remove that consequence cue.",
+      "predicted": [
+        "threat"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 1,
+        "reward": 0
+      },
+      "findings": [
+        {
+          "rule_id": "T01",
+          "category": "threat",
+          "start": 72,
+          "end": 96,
+          "matched_text": "mailbox will be disabled",
+          "context": "As agreed in your service request, the old mailbox will be disabled. Keep using your replacement address.",
+          "rationale": "The message describes a loss of account or service access.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "group": "ordinary_notice_with_cue",
+      "text": "Subject: Library workshop\n\nParticipants receive a free gift at the workshop. Registration is available at the usual library desk.",
+      "expected": [
+        "reward"
+      ],
+      "evidence": {
+        "reward": "free gift"
+      },
+      "rationale": "A normal promotion still offers a benefit to encourage participation.",
+      "predicted": [
+        "reward"
+      ],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 1
+      },
+      "findings": [
+        {
+          "rule_id": "R01",
+          "category": "reward",
+          "start": 50,
+          "end": 59,
+          "matched_text": "free gift",
+          "context": "Participants receive a free gift at the workshop. Registration is available at the usual library desk.",
+          "rationale": "The text promises a benefit or invites a reward claim.",
+          "context_note": ""
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "group": "no_target_cues",
+      "text": "Subject: Discussion notes\n\nThe discussion notes are in our shared folder. Please add comments when convenient.",
+      "expected": [],
+      "evidence": {},
+      "rationale": "No short deadline, authority role, adverse consequence or reward appeal is asserted.",
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "N02",
+      "group": "no_target_cues",
+      "text": "Subject: Display settings\n\nThe account settings page now supports a larger font. The help article explains how to change it.",
+      "expected": [],
+      "evidence": {},
+      "rationale": "Account and help vocabulary alone do not communicate any of the four target meanings.",
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "N03",
+      "group": "no_target_cues",
+      "text": "Subject: Proofreading question\n\nThe word prize appears in paragraph two of the draft. Could you check whether the spelling is correct?",
+      "expected": [],
+      "evidence": {},
+      "rationale": "The word prize is discussed as text; no benefit is offered to the reader.",
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    },
+    {
+      "id": "N04",
+      "group": "no_target_cues",
+      "text": "Subject: Invoice routing\n\nPlease use the replacement payment details for the next invoice. The document contains the new account number.",
+      "expected": [],
+      "evidence": {},
+      "rationale": "The request could warrant verification but asserts none of the four target cue meanings; no safety label is assigned.",
+      "predicted": [],
+      "missing": [],
+      "extra": [],
+      "exact_set": true,
+      "counts": {
+        "urgency": 0,
+        "authority": 0,
+        "threat": 0,
+        "reward": 0
+      },
+      "findings": []
+    }
+  ]
+}
